@@ -5,6 +5,7 @@
  *
  * Find the smallest positive integer that does not occur in a given sequence.
  *
+ * ---
  *
  * This is a demo task.
  *

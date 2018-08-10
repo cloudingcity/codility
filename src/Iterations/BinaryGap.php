@@ -5,6 +5,7 @@
  *
  * Find longest sequence of zeros in binary representation of an integer.
  *
+ * ---
  *
  * A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at
  * both ends in the binary representation of N.
@@ -35,7 +36,7 @@
  * Copyright 2009–2018 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.
  */
 
-namespace Clouding\Codility;
+namespace Clouding\Codility\Iterations;
 
 class BinaryGap
 {

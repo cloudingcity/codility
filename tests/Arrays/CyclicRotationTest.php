@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Clouding\Codility\CyclicRotation;
+use Clouding\Codility\Arrays\CyclicRotation;
 
 class CyclicRotationTest extends TestCase
 {

@@ -2,7 +2,7 @@
 
 
 use PHPUnit\Framework\TestCase;
-use Clouding\Codility\OddOccurrencesInArray;
+use Clouding\Codility\Arrays\OddOccurrencesInArray;
 
 class OddOccurrencesInArrayTest extends TestCase
 {

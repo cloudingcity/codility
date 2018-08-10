@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Clouding\Codility\BinaryGap;
+use Clouding\Codility\Iterations\BinaryGap;
 
 class BinaryGapTest extends TestCase
 {
