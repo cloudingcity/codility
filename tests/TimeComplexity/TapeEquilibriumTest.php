@@ -35,10 +35,17 @@ class TapeEquilibriumTest extends TestCase
         $this->assertSame(TapeEquilibrium::solution($A), 2);
     }
 
-    public function test_N_5()
+    public function test_N_2_negative()
     {
-        $A = [1, 2, 3, 4 ,5];
+        $A = [1, -2];
 
         $this->assertSame(TapeEquilibrium::solution($A), 3);
+    }
+
+    public function test_N_4_negative()
+    {
+        $A = [-1, -1, 2, 2];
+
+        $this->assertSame(TapeEquilibrium::solution($A), 2);
     }
 }

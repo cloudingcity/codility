@@ -63,22 +63,20 @@ class TapeEquilibrium
     public static function solution($numbers)
     {
         $count = count($numbers);
+
+        // P = 1
         $leftSum = current($numbers);
         $rightSum = array_sum(
             array_slice($numbers, 1)
         );
-        $diffLast = abs($leftSum - $rightSum);
+        $diff[] = abs($leftSum - $rightSum);
 
-        for ($index = 1; $index < $count; $index++) {
-            $leftSum += $numbers[$index];
-            $rightSum -= $numbers[$index];
-            $diffNow = abs($leftSum - $rightSum);
-
-            if ($diffLast <= $diffNow) {
-                return $diffLast;
-            }
-
-            $diffLast = $diffNow;
+        for ($index = 2; $index < $count; $index++) {
+            $leftSum += $numbers[$index - 1];
+            $rightSum -= $numbers[$index - 1];
+            $diff[] = abs($leftSum - $rightSum);
         }
+
+        return min($diff);
     }
 }
